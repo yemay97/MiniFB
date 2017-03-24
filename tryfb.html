@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+</head>
+<style>
+.container-fluid{
+	background-color:#3b5998;}
+.glyphicon{
+	color:#00004d;
+}
+.divider-vertical {
+height: 40px;
+margin: 5px 5px;
+border-right: 1px solid #000033;
+}
+</style>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+  <div class="allnav">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><img alt="fb" src="fb.PNG"></a>
+    </div>
+    <form class="navbar-form navbar-left">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Facebook">
+        <div class="input-group-btn">
+          <button class="btn btn-default" type="submit">
+            <i class="glyphicon glyphicon-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" style="color:white" data-toggle="tooltip" data-placement="bottom" title="Profile"><span class="glyphicon glyphicon-user"></span> 
+        <b>Happy Pola</b></a></li>
+        <li><a href="#" style="color:white" ><b>Home</b></a></li>
+      <li><a class="Friends"href="#" data-toggle="tooltip" data-placement="bottom" title="Friend Requests">
+	  <img alt="Social" src="341289-200.png" width="16" height="16"></a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Messages"><span class="glyphicon glyphicon-envelope"></span></a></li>
+      <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Notifications"><span class="glyphicon glyphicon-globe"></span></a></li>
+      <li class="divider-vertical"></li>
+      <li><a class="Help" href="#" data-toggle="tooltip" data-placement="bottom" title="Quick Helps">
+	  <img alt="QuickHelp" src="quickhep.png" width="16" height="16"></a></li>
+<!--Dropdown menu-->
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>    
+      <ul class="dropdown-menu">
+      <li class="dropdown-header">Your Pages</li>
+      <li><a href="#"><img alt="Pages img" src="2.png" height="20px" width="20px"> Pages1</a></li>
+      <li><a href="#"><img alt="Pages image" src="IMG_1086694.jpg" height="20px" width="20px"> Pages2</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Create Page</a></li>
+      <li><a href="#">Manage Pages</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Create Groups</a></li>
+      <li><a href="#">New Groups</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Create Ads</a></li>
+      <li><a href="#">Advertising on Facebook</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Activity Log</a></li>
+      <li><a href="#">New Feed Preferences</a></li>
+      <li><a href="#">Settings</a></li>
+      <li><a href="#">Log Out</a></li>
+    </ul>
+      
+    </ul>
+  </div>
+  </div>
+</nav>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+</body>
+</html>
+
